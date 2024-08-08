@@ -1,10 +1,9 @@
-## Hackathon Challenge: 
+## WEBfest Hackathon Challenge: 
 
-# Post Quantum Cryptography:
-
-# Integrating PQDS into Web3 with COSMOS SDK
+#### Post Quantum Cryptography: Integrating PQDS into Web3 with COSMOS SDK
 
 ## What is Post Quantum cryptography?
+Post-quantum cryptography (PQC), sometimes referred to as quantum-proof, quantum-safe, or quantum-resistant, is the development of cryptographic algorithms (usually public-key algorithms) that are thought to be secure against a cryptanalytic attack by a quantum computer. Most widely-used public-key algorithms rely on the difficulty of one of three mathematical problems: the integer factorization problem, the discrete logarithm problem or the elliptic-curve discrete logarithm problem. (Taken from Wikipedia)
 
 ## PQDS algorithms Algorithm
 
