@@ -1,0 +1,17 @@
+syntax = "proto3";
+package cernwebfestpostquantumcryptography.cernwebfestpostquantumcryptography;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "cernwebfestpostquantumcryptography/cernwebfestpostquantumcryptography/params.proto";
+
+option go_package = "github.com/EishaMazhar/CERN-Webfest-Post-Quantum-Cryptography/x/cernwebfestpostquantumcryptography/types";
+
+// GenesisState defines the cernwebfestpostquantumcryptography module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

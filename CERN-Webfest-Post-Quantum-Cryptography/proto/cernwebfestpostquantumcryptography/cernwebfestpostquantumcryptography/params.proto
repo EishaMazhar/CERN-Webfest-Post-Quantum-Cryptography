@@ -1,0 +1,15 @@
+syntax = "proto3";
+package cernwebfestpostquantumcryptography.cernwebfestpostquantumcryptography;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/EishaMazhar/CERN-Webfest-Post-Quantum-Cryptography/x/cernwebfestpostquantumcryptography/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "cernwebfestpostquantumcryptography/x/cernwebfestpostquantumcryptography/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
