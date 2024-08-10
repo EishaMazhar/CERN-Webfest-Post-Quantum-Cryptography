@@ -27,3 +27,6 @@ release/
 *.dot
 *.log
 *.ign
+
+# Build
+CERN-Webfest-Post-Quantum-Cryptographyd
