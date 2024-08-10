@@ -1,6 +1,7 @@
 package app
 
 import (
+	"fmt"
 	"io"
 
 	_ "cosmossdk.io/api/cosmos/tx/config/v1" // import for side-effects
@@ -76,6 +77,8 @@ import (
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
 	cernwebfestpostquantumcryptographymodulekeeper "github.com/EishaMazhar/CERN-Webfest-Post-Quantum-Cryptography/x/cernwebfestpostquantumcryptography/keeper"
+	"github.com/EishaMazhar/CERN-Webfest-Post-Quantum-Cryptography/x/cernwebfestpostquantumcryptography/postquantumcrypto"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	"github.com/EishaMazhar/CERN-Webfest-Post-Quantum-Cryptography/docs"
@@ -250,6 +253,12 @@ func New(
 	); err != nil {
 		panic(err)
 	}
+
+	// Add a debug print statement here
+	fmt.Println("Debug: About to register the custom codec.")
+
+	// Register custom codecs
+	postquantumcrypto.RegisterCodec(app.legacyAmino)
 
 	// add to default baseapp options
 	// enable optimistic execution
